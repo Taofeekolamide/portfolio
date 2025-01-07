@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body id="body">
+    <header class="white-background section-right-left d-flex justify-between align-center header-top-bottom position">
+        <h1 class="font-size-s">OLAMIDE</h1>
+
+        <div class="menu">
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </div>
+    
+        <nav id="nav">
+            <ul class="ul d-flex gap-s">
+                <li><a href="#home" class="a black">Home</a></li>
+                <li><a href="#about" class="a black">About</a></li>
+                <li><a href="#services" class="a black">Services</a></li>
+                <li><a href="#portfolio" class="a black">Portfolio</a></li>
+                <li><a href="#contact" class="a black">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+        
+    </header>
+
+    <section id="menu-nav" class="deem-background breadcomb">
+        <nav>
+            <ul class="ul">
+                <li><i class="fa-solid fa-xmark pt-15 text-right" onclick="hidemenu()"></i></li><br>
+                <li><a href="#home" class="a black"  onclick="hidemenu()">Home</a></li><br>
+                <li><a href="#about" class="a black"  onclick="hidemenu()">About</a></li><br>
+                <li><a href="#services" class="a black"  onclick="hidemenu()">Services</a></li><br>
+                <li><a href="#portfolio" class="a black"  onclick="hidemenu()">Portfolio</a></li><br>
+                <li><a href="#contact" class="a black"  onclick="hidemenu()">Contact</a></li><br>
+            </ul>
+        </nav>
+    </section>
+
+    <section style="position:fixed; top: 50%; right: 20px;" >
+        <div>
+            <button onclick="location.href='https://github.com/Taofeekolamide'" class="button-blue white font-size-m" title="git hub"><i class="fa-brands fa-github"></i></button><br><br>
+            <button onclick="location.href='https://www.linkedin.com/in/taofeek-olamide/'" class="button-blue white font-size-m" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></button>
+        </div>
+    </section>
+
+    <section class="section-right-left justify-between section-top-bottom background-img grid-2" id="home">
+        <div>
+            <h1 class="font-size-l">Hi, I'm <span class="blue">Olamide</span></h1>
+            <h1 class="font-size-l">Welcome to my Portfolio</h1>
+            <p class="font-size-m pt-15 pb-20">Front-end, Back-end Developer & UI/UX Designer</p>
+            <button class="button font-size-s button-blue white" onclick="location.href='#contact'">Hire Me Now</button>
+        </div>
+
+        <div class="d-flex justify-end">
+            <img src="./images/me.png" alt="my img" style="border-radius: 50%;" width="70%">
+        </div>
+    </section>
+
+    <section class="section-right-left section-top-bottom grid-3 justify-between" id="about">
+        <div>
+            <div class="d-flex gap-s align-center pb-20">
+                <img src="./images/bnr-szape03.png" alt="arrow" height="13px" width="25px">
+                <p class="font-size-m blue">ABOUT ME</p>
+            </div>
+            <h1 class="font-size-sm pb-20">My Soft Skills</h1>
+            <p class="font-size-s fade">I am a dedicated and passionate Full-Stack Developer and UI/UX Designer with expertise in crafting seamless digital experiences. By combining technical precision with creative design, I deliver visually striking, functional, and user-centered solutions that enhance user satisfaction and engagement</p>
+        </div>
+        <div>
+            <div class="pb-20">
+                <div class="d-flex justify-between">
+                    <p>HTML</p>
+                    <p>95%</p>
+                </div>
+                <progress value="95" max="100" class="border-box"></progress>
+            </div>
+            <div class="pb-20">
+                <div class="d-flex justify-between">
+                    <p>CSS</p>
+                    <p>90%</p>
+                </div>
+                <progress value="90" max="100" class="border-box"></progress>
+            </div>
+            <div class="pb-20">
+                <div class="d-flex justify-between">
+                <p>Bootstrap</p>
+                <p>75%</p>
+                </div>
+                <progress value="75" max="100" class="border-box"></progress>
+            </div>
+            <div class="pb-20">
+                <div class="d-flex justify-between">
+                    <p>Javascript</p>
+                    <p>60%</p>
+                </div>
+                <progress value="60" max="100" class="border-box"></progress>
+            </div>
+        </div>
+        <div>
+            <div class="pb-20">
+                <div class="d-flex justify-between">
+                    <p>React</p>
+                    <p>50%</p>
+                </div>
+                <progress value="50" max="100" class="border-box"></progress>
+            </div>
+            <div class="pb-20">
+                <div class="d-flex justify-between">
+                    <p>C#</p>
+                    <p>50%</p>
+                </div>
+                <progress value="50" max="100" class="border-box"></progress>
+            </div>
+            <div class="pb-20">
+                <div class="d-flex justify-between">
+                    <p>Figma</p>
+                    <p>50%</p>
+                </div>
+                <progress value="50" max="100" class="border-box"></progress>
+            </div>
+            <div class="pb-20">
+                <div class="d-flex justify-between">
+                    <p>Wordress</p>
+                    <p>90%</p>
+                </div>
+                <progress value="90" max="100" class="border-box"></progress>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-right-left section-top-bottom deem-background">
+        <div class="d-flex gap-s align-center pb-20 justify-center">
+            <img src="./images/bnr-szape03.png" alt="arrow" height="13px" width="25px">
+            <p class="font-size-m blue">WORK EXPERIENCE</p>
+        </div>
+        <h1 class="text-align pb-20 font-size-sm">Building Impactful Solutions</h1>
+        <p class="text-align pb-20">A prove track of delivering impactful solutions, leveraging technical expertise, and fostering collaboration to drive success in delivering roles, including software development and education</p>
+
+        <div class="grid-2 pb-20 justify-between">
+            <div class="border">
+                <div class="d-flex justify-between white-background pad">
+                    <button class="button-blue white">Web Designer</button>
+                    <p>June 2023 - September 2023</p>
+                </div>
+                <div class="pad">
+                    <div class="d-flex gap-s">
+                        <div>
+                            <button class="font-size-m radius pad">EO</button>
+                        </div>
+                        <div>
+                            <h1 class="font-size-m">Ef-One Web</h1>
+                            <p class="fade">I honed my skills as a Web Designer, contributing to the creation of engaging, user-centric websites that met client expectations and industry standards. My role involved combining creativity with technical expertise to deliver visually stunning and highly functional digital solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border">
+                <div class="d-flex justify-between white-background pad">
+                    <button class="button-blue white">Web Developer</button>
+                    <p>October 2023 - February 2024</p>
+                </div>
+                <div class="pad">
+                    <div class="d-flex gap-s">
+                        <div>
+                            <button class="font-size-m radius pad">SH</button>
+                        </div>
+                        <div>
+                            <h1 class="font-size-m">SkillHints</h1>
+                            <p class="fade">I played a pivotal role in designing and developing user-friendly web solutions to enhance the platform’s digital presence. My work revolved around building responsive, interactive, and functional websites that aligned with the company’s goals and user needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-2 justify-between">
+            <div class="border">
+                <div class="d-flex justify-between white-background pad">
+                    <button class="button-blue white">UI/UX Designer</button>
+                    <p>July 2024 - August 2024</p>
+                </div>
+                <div class="pad">
+                    <div class="d-flex gap-s">
+                        <div>
+                            <button class="font-size-m radius pad">AA</button>
+                        </div>
+                        <div>
+                            <h1 class="font-size-m">AGSOBA</h1>
+                            <p class="fade">I contributed to creating intuitive, user-focused digital experiences that aligned with the company’s vision. My role involved leveraging user research, design principles, and modern tools to deliver seamless interfaces and engaging experiences for diverse projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border">
+                <div class="d-flex justify-between white-background pad">
+                    <button class="button-blue white">Web Design Tutor</button>
+                    <p>September 2024 - Present</p>
+                </div>
+                <div class="pad">
+                    <div class="d-flex gap-s">
+                        <div>
+                            <button class="font-size-m radius pad">MI</button>
+                        </div>
+                        <div>
+                            <h1 class="font-size-m">MITC</h1>
+                            <p class="fade">I guided students in mastering the fundamentals of web design and development, equipping them with the skills to create professional, user-centered websites. My role involved delivering engaging lessons, providing hands-on training, and fostering a collaborative learning environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-right-left section-top-bottom light-background" id="services">
+        <div class="d-flex gap-s align-center pb-20 justify-center">
+            <img src="./images/bnr-szape03.png" alt="arrow" height="13px" width="25px">
+            <p class="font-size-m blue">MY SERVICES</p>
+        </div>
+        <h1 class="text-align pb-20 font-size-sm">I'm Specialized In</h1>
+        <div class="grid-4 justify-between">
+            <div class="white-background pad">
+                <h1 class="font-size-s pb-20">Creative Web Design</h1>
+                <img src="./images/service-icon1-dev.png" alt="" width="40px" height="40px" class="pb-20">
+                <p class="fade">Crafting visually stunning and engaging website designs tailored to your brand identity.</p>
+            </div>
+            <div class="white-background pad">
+                <h1 class="font-size-s pb-20">User-Centered UI/UX Design</h1>
+                <img src="./images/service-icon3-dev.png" alt="" width="40px" height="40px" class="pb-20">
+                <p class="fade">Conducting user research, usability testing, and crafting interactive prototypes.</p>
+            </div>
+            <div class="white-background pad">
+                <h1 class="font-size-s pb-20">Front-End Development</h1>
+                <img src="./images/service-icon2-dev.png" alt="" width="40px" height="40px" class="pb-20">
+                <p class="fade">Transforming designs into functional, user-friendly websites using HTML, CSS, Bootstrap, and JavaScript.</p>
+            </div>
+            <div class="white-background pad">
+                <h1 class="font-size-s pb-20">Back-End Development</h1>
+                <img src="./images/service-icon4-dev.png" alt="" width="40px" height="40px" class="pb-20">
+                <p class="fade">Developing robust server-side applications using C# and ASP.NET for secure and efficient functionality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-right-left section-top-bottom deem-background" id="portfolio">
+        <div class="d-flex gap-s align-center pb-20 justify-center">
+            <img src="./images/bnr-szape03.png" alt="arrow" height="13px" width="25px">
+            <p class="font-size-m blue">MY PROJECTS</p>
+        </div>
+        <h1 class="text-align pb-20 font-size-sm">Check Out My Latest Work</h1>
+        <div class="grid-2 justify-between">
+            <div>
+                <img src="./images/portfolio-1.png" alt="my work 1" class="border-box">
+                <h1 class="font-size-s">Web Design</h1>
+                <p class="fade">Web Design</p>
+            </div>
+            <div>
+                <img src="./images/portfolio-2.png" alt="my work 2" class="border-box">
+                <h1 class="font-size-s">UI/UX Design</h1>
+                <p class="fade">UI/UX Design</p>
+            </div>
+        </div>
+    <!--<div class="d-flex gap-s">
+            <div class="width">
+                <img src="" alt="my work 1">
+                <h1 class="font-size-s">rrrrrrrrrrrrrrr</h1>
+                <p class="fade">rrrrrrrrrrrrr</p>
+            </div>
+            <div class="width">
+                <img src="" alt="my work 1">
+                <h1 class="font-size-s">rrrrrrrrrrrrrrr</h1>
+                <p class="fade">rrrrrrrrrrrrr</p>
+            </div>
+        </div>-->
+    </section>
+
+    <section class="section-right-left section-top-bottom grid-2 justify-between stbackground-img" id="contact">
+        <div>
+            <div class="d-flex gap-s align-center pb-20">
+                <img src="./images/bnr-szape03.png" alt="arrow" height="13px" width="25px">
+                <p class="font-size-m blue">STAY CONNECTED</p>
+            </div>
+            <h1 class="font-size-sm pb-20">Let’s Work Together!</h1>
+            <div class="d-flex gap-s pb-20 pt-15">
+                <button class="button-blue white ndp radius"><i class="fa-solid fa-phone font-size-m"></i></button>
+                <div>
+                    <p class="fade">Phone</p>
+                    <p>+234 810 381 9467</p>
+                </div>
+            </div>
+            <div class="d-flex gap-s pb-20 pt-15">
+                <button class="button-blue white ndp radius"><i class="fa-solid fa-envelope font-size-m"></i></button>
+                <div>
+                    <p class="fade">Email</p>
+                    <p>taofeekolamide55@gmail.com</p>
+                </div>
+            </div>
+            <div class="d-flex gap-s pb-20 pt-15">
+                <button class="button-blue white ndp radius"><i class="fa-solid fa-location-dot font-size-m"></i></button>
+                <div>
+                    <p class="fade">Address</p>
+                    <p>Abeokuta, Ogun State. Nigeria.</p>
+                </div>
+            </div>
+        </div>
+        <div class="white-background stp">
+            <form onsubmit="sendEmail(event)" id="contact-form">
+                <div class="d-flex gap-s pb-20">
+                    <input type="text" class="border-box ndp" required placeholder="Full Name" id="name">
+                    <input type="email" class="border-box ndp" required placeholder="Email" id="email">
+                </div>
+                <div class="d-flex gap-s pb-20">
+                    <input type="tel" class="border-box ndp" required placeholder="Phone Number" id="phone">
+                    <select class="border-box ndp" id="services">
+                        <option value="">Choose Service</option>
+                        <option value="web-development">Web Design</option>
+                        <option value="ui/ux">UI/UX Design</option>
+                        <option value="front-end">Front-end Development</option>
+                        <option value="back-end">Back-End Development</option>
+                    </select>
+                </div>
+                <div class="pb-20">
+                    <textarea class="border-box pad" rows="7" placeholder="Message" id="message"></textarea>
+                </div>
+                
+                <button class="button-blue white ndp" type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-top-bottom text-align">
+        <h1 class="font-size-s pb-20">OLAMIDE</h1>
+        <p>© 2024. Designed by Olamide with ❤️.</p>
+    </footer>
+</body>
+<script src="./form.js"></script>
+</html>
