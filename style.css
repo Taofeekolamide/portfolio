@@ -7,20 +7,18 @@ html {
     scroll-behavior: smooth;
 }
 
-.menu, #menu-nav {
+header .fa-solid {
     display: none;
 }
 
-.breadcomb {
-    position: fixed;
-    right: 0px;
-    top: 0;
-    width: 80%;
+.menu {
     z-index: 1000;
 }
-#menu-nav {
-    height: 100%;
-    width: 90%;
+
+.menu nav ul  {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
 /*section padding*/
@@ -118,10 +116,6 @@ html {
     color: white;
 }
 
-.ul {
-    list-style: none;
-}
-
 .position {
     position: sticky;
     top: 0;
@@ -204,8 +198,55 @@ html {
     border: 1px solid #bababa;
 }
 
+@media (max-width: 992px) {
+    .grid-2, .grid-3, .grid-4 {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        gap: 20px;
+    }
+
+    .font-size-l {
+        font-size: 35px;
+    }
+
+    .font-size-sm {
+        font-size: 25px;
+    }
+
+    .font-size-m {
+        font-size: 16px;
+    }
+
+    .font-size-s {
+        font-size: 14px;
+    }
+
+}
+
 /*resposiveness*/
 @media (max-width: 768px) {
+
+    .menu {
+        position: fixed;
+        background-color: #5776ff;
+        top: 0;
+        width: 70%;
+        right: -70%;
+        height: 100%;
+        transition: 2s;
+    }
+    header .fa-solid {
+        display: block;
+    }
+
+    .menu nav ul  {
+        display: block;
+    }
+
+    .menu nav ul li {
+        padding-top: 15px;
+    }
+
     .grid-2, .grid-3, .grid-4 {
         display: grid;
         grid-template-columns: 100%;
@@ -249,21 +290,8 @@ html {
         padding-bottom: 90px;
     }
 
-    #nav {
-        display: none;
-    }
 
-    .menu{
-        display: block;
-    }
 }
-
-
-
-
-
-
-
 
 /*scroll bar*/
 ::-webkit-scrollbar {

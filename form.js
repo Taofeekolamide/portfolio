@@ -32,8 +32,8 @@
     }
 
     function showmenu() {
-        document.getElementById("menu-nav").style.display = "block"
+        document.getElementById("menu").style.right = "0%";
     }
     function hidemenu() {
-        document.getElementById("menu-nav").style.display = "none"
+        document.getElementById("menu").style.right = "-70%";
     }

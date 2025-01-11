@@ -13,36 +13,21 @@
     <header class="white-background section-right-left d-flex justify-between align-center header-top-bottom position">
         <h1 class="font-size-s">OLAMIDE</h1>
 
-        <div class="menu">
-            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
-        </div>
-    
-        <nav id="nav">
-            <ul class="ul d-flex gap-s">
-                <li><a href="#home" class="a black">Home</a></li>
-                <li><a href="#about" class="a black">About</a></li>
-                <li><a href="#services" class="a black">Services</a></li>
-                <li><a href="#portfolio" class="a black">Portfolio</a></li>
-                <li><a href="#contact" class="a black">Contact</a></li>
-            </ul>
-        </nav>
+        <i class="fa-solid fa-bars" onclick="showmenu()"></i>
 
-        
-        
+        <div class="menu" id="menu">
+            <nav>
+                <ul>
+                    <li><i class="fa-solid fa-xmark" onclick="hidemenu()"></i></li>
+                    <li><a href="#home" class="a black">Home</a></li>
+                    <li><a href="#about" class="a black">About</a></li>
+                    <li><a href="#services" class="a black">Services</a></li>
+                    <li><a href="#portfolio" class="a black">Portfolio</a></li>
+                    <li><a href="#contact" class="a black">Contact</a></li>
+                </ul>
+            </nav>
+        </div>     
     </header>
-
-    <section id="menu-nav" class="deem-background breadcomb">
-        <nav>
-            <ul class="ul">
-                <li><i class="fa-solid fa-xmark pt-15 text-right" onclick="hidemenu()"></i></li><br>
-                <li><a href="#home" class="a black"  onclick="hidemenu()">Home</a></li><br>
-                <li><a href="#about" class="a black"  onclick="hidemenu()">About</a></li><br>
-                <li><a href="#services" class="a black"  onclick="hidemenu()">Services</a></li><br>
-                <li><a href="#portfolio" class="a black"  onclick="hidemenu()">Portfolio</a></li><br>
-                <li><a href="#contact" class="a black"  onclick="hidemenu()">Contact</a></li><br>
-            </ul>
-        </nav>
-    </section>
 
     <section style="position:fixed; top: 50%; right: 20px;" >
         <div>
